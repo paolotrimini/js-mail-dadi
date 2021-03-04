@@ -44,28 +44,22 @@
         // controlla che sia nella lista di chi può accedere
         // stampa un messaggio appropriato
 
-        var arr = ['uno@gmail.com', 'due@gmail.com', 'utente@gmail.com'];
-        var index = prompt('inserisci email utente: ');
 
+        var arr = ['uno@gmail.com', 'due@gmail.com', 'tre@gmail.com'];
+        var emailUtente = prompt("inserire l'email per effettuare l'accesso: ");
 
         for (var i=0; i<arr.length; i++) {
 
+            var elencoEmail = arr[i];
 
-            if( index === arr[2]) {
-
-                document.getElementById('mainTitle').innerHTML = 'accesso consentito';
-
+            if (elencoEmail === emailUtente) {
+                document.getElementById('mainTitle').innerHTML = 'accesso consentito!';
             } else {
-
-                document.getElementById('mainTitle').innerHTML = 'accesso NEGATO';
-
+                console.log('accesso NEGATO!');
+                //document.getElementById('mainTitle').innerHTML = 'accesso NEGATO!';
             }
 
         }
-
-
-
-
 
 
         // Esercizio 2 - Gioco dei dadi, chi fa di più vince
