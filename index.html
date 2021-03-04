@@ -47,19 +47,17 @@
         var arr = ['uno@gmail.com', 'due@gmail.com', 'utente@gmail.com'];
         var index = prompt('inserisci email utente: ');
 
-        //var emailUtente = 'utente@gmail.com';
+
+        for (var i=0; i<arr.length; i++) {
 
 
-        for (var i=0;i<arr.length;i++) {
+            if( index === arr[2]) {
 
-           // var elem = arr[i];
+                document.getElementById('mainTitle').innerHTML = 'accesso consentito';
 
-            if() {
-                console.log();
-                document.getElementById('mainTitle').innerHTML = '';
             } else {
-                console.log();
-                document.getElementById('mainTitle').innerHTML = '';
+
+                document.getElementById('mainTitle').innerHTML = 'accesso NEGATO';
 
             }
 
