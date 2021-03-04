@@ -55,14 +55,14 @@
         // stabilire il vincitore in base a chi fa il punteggio più alto
 
         var firstLaunch = Math.floor(Math.random() * (6 - 1) ) + 1;
-        console.log('giocatore A: ' + firstLaunch);
+        console.log('giocatore: ' + firstLaunch);
 
         var secondLaunch = Math.floor(Math.random() * (6 - 1) ) + 1;
-        console.log('giocatore B: ' + secondLaunch);
+        console.log('computer: ' + secondLaunch);
 
         if(firstLaunch > secondLaunch) {
 
-            document.getElementById('mainTitle').innerHTML = "ha vinto il giocatore A"
+            document.getElementById('mainTitle').innerHTML = "ha vinto il giocatore"
 
         } else if (firstLaunch === secondLaunch) {
 
@@ -70,7 +70,7 @@
 
         } else {
 
-            document.getElementById('mainTitle').innerHTML = "ha vinto il giocatore B"
+            document.getElementById('mainTitle').innerHTML = "ha vinto il computer"
         }
 
 
