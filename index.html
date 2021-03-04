@@ -44,9 +44,6 @@
         // controlla che sia nella lista di chi può accedere
         // stampa un messaggio appropriato
 
-        var arr = ['uno@gmail.com', 'due@gmail.com', 'utente@gmail.com'];
-        //console.log(arr);
-
 
 
 
@@ -55,7 +52,27 @@
 
         // Esercizio 2 - Gioco dei dadi, chi fa di più vince
         // generare un numero random da 1 a 6 sia per il giocatore sia per il computer
-        // stabilire il vincitore in base a cji fa il punteggio più alto
+        // stabilire il vincitore in base a chi fa il punteggio più alto
+
+        var firstLaunch = Math.floor(Math.random() * (6 - 1) ) + 1;
+        console.log(firstLaunch);
+
+        var secondLaunch = Math.floor(Math.random() * (6 - 1) ) + 1;
+        console.log(secondLaunch);
+
+        if(firstLaunch > secondLaunch) {
+
+            document.getElementById('mainTitle').innerHTML = "ha vinto il giocatore 1"
+
+        } else if (firstLaunch === secondLaunch) {
+
+            document.getElementById('mainTitle').innerHTML = "pareggio"
+
+        } else {
+            document.getElementById('mainTitle').innerHTML = "ha vinto il giocatore 2"
+        }
+
+
 
 
 
