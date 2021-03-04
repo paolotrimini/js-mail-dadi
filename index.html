@@ -38,13 +38,40 @@
 
 <!--codice javascript-->
 
-<script>
+    <script>
+
+        // Esercizio 1 - chiedi all'utente la sua email,
+        // controlla che sia nella lista di chi può accedere
+        // stampa un messaggio appropriato
+
+        var arr = ['uno@gmail.com', 'due@gmail.com', 'paolo@gmail.com'];
+        var emailUtente = 'paolo@gmail.com';
+        var index = prompt('inserisci la tua email: ');
+
+        if (index === emailUtente) {
+
+            console.log('accesso consentito!');
+            document.getElementById('mainTitle').innerHTML = 'accesso consentito!';
+
+        } else {
+            console.log('accesso NEGATO!');
+            document.getElementById('mainTitle').innerHTML = 'accesso NEGATO!';
+
+        }
+
+
+
+
+        // Esercizio 2 - Gioco dei dadi, chi fa di più vince
+        // generare un numero random da 1 a 6 sia per il giocatore sia per il computer
+        // stabilire il vincitore in base a cji fa il punteggio più alto
 
 
 
 
 
-</script>
+
+    </script>
 
 </body>
 </html>
