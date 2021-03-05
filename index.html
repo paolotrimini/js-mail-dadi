@@ -45,45 +45,46 @@
         // stampa un messaggio appropriato
 
 
-        var arr = ['uno@gmail.com', 'due@gmail.com', 'tre@gmail.com'];
+    /*    var arr = ['uno@gmail.com', 'due@gmail.com', 'tre@gmail.com'];
         var emailUtente = prompt("inserire l'email per effettuare l'accesso: ");
+
+        var finded = false;
 
         for (var i=0; i<arr.length; i++) {
 
-            var elencoEmail = arr[i];
+            var mail = arr[i];
 
-            if (elencoEmail === emailUtente) {
-                document.getElementById('mainTitle').innerHTML = 'accesso consentito!';
-            } else {
-                console.log('accesso NEGATO!');
-                //document.getElementById('mainTitle').innerHTML = 'accesso NEGATO!';
+            if(mail == emailUtente) {
+
+                finded = true;
             }
 
         }
 
+        console.log(emailUtente, finded);*/
 
         // Esercizio 2 - Gioco dei dadi, chi fa di più vince
         // generare un numero random da 1 a 6 sia per il giocatore sia per il computer
         // stabilire il vincitore in base a chi fa il punteggio più alto
 
-        /*var firstLaunch = Math.floor(Math.random() * (6 - 1) ) + 1;
-        console.log('giocatore: ' + firstLaunch);
+        var player = Math.floor(Math.random() * (6 - 1) ) + 1;
+        console.log('player: ' + player);
 
-        var secondLaunch = Math.floor(Math.random() * (6 - 1) ) + 1;
-        console.log('computer: ' + secondLaunch);
+        var computer = Math.floor(Math.random() * (6 - 1) ) + 1;
+        console.log('computer: ' + computer);
 
-        if(firstLaunch > secondLaunch) {
+        if(player > computer) {
 
-            document.getElementById('mainTitle').innerHTML = 'ha vinto il giocatore';
+            document.getElementById('mainTitle').innerHTML = 'ha vinto il player';
 
-        } else if (firstLaunch === secondLaunch) {
+        } else if (player < computer) {
 
-            document.getElementById('mainTitle').innerHTML = 'pareggio';
+            document.getElementById('mainTitle').innerHTML = 'ha vinto il computer';
 
         } else {
 
-            document.getElementById('mainTitle').innerHTML = 'ha vinto il computer';
-        }*/
+            document.getElementById('mainTitle').innerHTML = 'pareggio';
+        }
 
 
 
